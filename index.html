@@ -1,0 +1,60 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Word To Json</title>
+	<style>
+		#output {
+			white-space: pre-wrap;
+			word-wrap: break-word;
+		}
+	</style>
+</head>
+
+<body>
+	<form>
+		<label for="wordFile">Select a Word file:</label>
+		<input type="file" id="wordFile" name="wordFile">
+		<br>
+		<button type="submit" id="uploadButton">Upload</button>
+	</form>
+
+	<div id="output"></div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.5.1/mammoth.browser.min.js"></script>
+	<script>
+		const form = document.querySelector('form');
+		const uploadButton = document.querySelector('#uploadButton');
+		const wordFileInput = document.querySelector('#wordFile');
+		const outputDiv = document.querySelector('#output');
+
+		form.addEventListener('submit', (e) => {
+			e.preventDefault();
+			const file = wordFileInput.files[0];
+			if (file) {
+				mammoth.convertToHtml({ arrayBuffer: file })
+				.then(result => {
+					console.log(result.value)
+				})
+				.done();
+			}
+		});
+	</script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home</title>
+</head>
+<body>
+	<a href="hello.html">Hello</a>
+</body>
+</html>
